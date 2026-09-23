@@ -91,6 +91,53 @@ p:last-child {
   font-weight: bold;
 }
 
+/* BUTTONS */
+.blog-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 0 25px 25px;
+}
+
+.blog-buttons button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.like-btn {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.like-btn:hover {
+  background: #bbf7d0;
+  transform: translateY(-2px);
+}
+
+.dislike-btn {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.dislike-btn:hover {
+  background: #fde68a;
+  transform: translateY(-2px);
+}
+
+.remove-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.remove-btn:hover {
+  background: #fecaca;
+  transform: translateY(-2px);
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
   #root {
@@ -107,5 +154,14 @@ p:last-child {
 
   h2 {
     font-size: 23px;
+  }
+
+  .blog-buttons {
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+  }
+
+  .blog-buttons button {
+    flex: 1;
   }
 }
